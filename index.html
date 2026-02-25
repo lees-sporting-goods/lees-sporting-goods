@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lee’s Sporting Goods | Haverstraw, NY</title>
+  <style>
+    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background:#0f172a; color:#e5e7eb; }
+    a { color:inherit; text-decoration:none; }
+    header { position:sticky; top:0; z-index:10; background:#020617; padding:18px 24px; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:22px; font-weight:800; color:#facc15; letter-spacing:.2px; }
+    nav a { margin-left:18px; font-weight:600; color:#e5e7eb; font-size:14px; }
+    nav a:hover { color:#facc15; }
+    .wrap { max-width:1200px; margin:auto; }
+    .hero { background:url('images/hero.jpg') center/cover no-repeat; padding:96px 24px; }
+    .hero-overlay { max-width:1100px; margin:auto; background:rgba(2,6,23,.78); padding:42px; border-radius:16px; border:1px solid rgba(148,163,184,.18); backdrop-filter: blur(6px); }
+    .hero h1 { font-size:52px; margin:0 0 10px; line-height:1.05; }
+    .hero p { font-size:18px; color:#cbd5f5; margin:0; }
+    .btns { margin-top:22px; display:flex; flex-wrap:wrap; gap:12px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:10px; font-weight:700; font-size:14px; }
+    .btn-primary { background:#2563eb; color:white; }
+    .btn-secondary { background:#020617; border:1px solid #334155; }
+    section { max-width:1200px; margin:auto; padding:64px 24px; }
+    h2 { font-size:30px; margin:0 0 22px; color:#facc15; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .card { background:#020617; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.35); border:1px solid rgba(148,163,184,.12); }
+    .card img { width:100%; height:200px; object-fit:cover; display:block; }
+    .card h3 { margin:16px 16px 0; font-size:18px; }
+    .card p { margin:10px 16px 18px; }
+    .services { text-align:center; }
+    .service-box { background:#020617; padding:26px 18px; border-radius:16px; border:1px solid rgba(148,163,184,.12); }
+    footer { background:#020617; padding:42px 24px; border-top:1px solid rgba(148,163,184,.12); }
+    .footer-grid { max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px; }
+    .muted { color:#94a3b8; font-size:14px; line-height:1.5; }
+    @media (max-width:640px){
+      .hero h1{ font-size:38px; }
+      nav{ display:none; }
+      header{ justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Lee’s Sporting Goods</div>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-overlay">
+    <h1>Lee’s Sporting Goods</h1>
+    <p>Firearms • Ammo • Fishing • Hunting • Outdoor Gear<br>Haverstraw, NY</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#contact">Call / Directions</a>
+      <a class="btn btn-secondary" href="#services">Services</a>
+    </div>
+    <p class="muted" style="margin-top:14px;">Inventory shown in-store. All firearm sales subject to NYS law & background checks.</p>
+  </div>
+</div>
+
+<section id="products">
+  <h2>Inside The Shop</h2>
+  <p class="muted" style="max-width:760px;margin:0 0 18px;">
+    A quick look at what we carry in-store — fishing tackle, rods, outdoor gear, and a full-service counter.
+  </p>
+  <div class="grid">
+    <div class="card"><img src="images/shop-1.jpg" alt="Inside Lee’s Sporting Goods"><h3>Fishing Tackle Wall</h3><p class="muted">Hooks, plastics, hard baits, terminal tackle & more.</p></div>
+    <div class="card"><img src="images/shop-2.jpg" alt="Inside the shop"><h3>Full-Service Counter</h3><p class="muted">Knowledgeable help with gear, special orders, and transfers.</p></div>
+    <div class="card"><img src="images/shop-3.jpg" alt="Store aisle"><h3>Gear & Accessories</h3><p class="muted">Rods, reels, accessories, and outdoor essentials.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Products</h2>
+  <div class="grid">
+    <div class="card" style="padding:26px;text-align:center;"><h3>🔫 Firearms</h3><p class="muted">In-store sales (all NYS laws apply)</p></div>
+    <div class="card" style="padding:26px;text-align:center;"><h3>💥 Ammunition</h3><p class="muted">Popular calibers stocked regularly</p></div>
+    <div class="card" style="padding:26px;text-align:center;"><h3>🎣 Fishing Gear</h3><p class="muted">Rods, reels, tackle & accessories</p></div>
+    <div class="card" style="padding:26px;text-align:center;"><h3>🦌 Hunting Gear</h3><p class="muted">Optics, apparel & field essentials</p></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="service-box"><h3>FFL Transfers</h3><p class="muted">Professional firearm transfers</p></div>
+    <div class="service-box"><h3>Gunsmithing (By Appointment)</h3><p class="muted">Cleaning, repairs, sights, optics mounting & compliance work</p></div>
+    <div class="service-box"><h3>Special Orders</h3><p class="muted">Hard-to-find firearms & gear</p></div>
+    <div class="service-box"><h3>NICS Checks</h3><p class="muted">Fast & NYS-compliant processing</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <h3 style="margin:0 0 8px;">Lee’s Sporting Goods</h3>
+      <p class="muted" style="margin:0;">Serving Haverstraw & Rockland County</p>
+    </div>
+    <div>
+      <h4 style="margin:0 0 8px;">Store Info</h4>
+      <p class="muted" style="margin:0;">
+        Haverstraw, NY 10927<br>
+        (845) 429-8065<br>
+        Mon–Sat: 11AM–6PM
+      </p>
+    </div>
+    <div>
+      <h4 style="margin:0 0 8px;">Compliance</h4>
+      <p class="muted" style="margin:0;">All firearm sales subject to NYS law & background checks. Please call to schedule gunsmithing.</p>
+    </div>
+  </div>
+  <p class="muted" style="text-align:center;margin:26px 0 0;">© Lee’s Sporting Goods</p>
+</footer>
+
+</body>
+</html>
